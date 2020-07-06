@@ -293,7 +293,7 @@ Created deployment 933a3fc0-0712-448d-8156-1f9cfa76a823
 Start a cqlsh session in the previously started container:
 
 ```
-$ dcos task exec -it cassandra-client cqlsh --cqlversion="3.4.0" node.cassandra.l4lb.thisdcos.directory
+$ dcos task exec -it cassandra-client cqlsh --cqlversion="3.4.4" <IP>/node.cassandra.l4lb.thisdcos.directory -u cassandra -p cassandra 
 Connected to cassandra at node.cassandra.l4lb.thisdcos.directory:9042.
 [cqlsh 5.0.1 | Cassandra 3.0.14 | CQL spec 3.4.0 | Native protocol v4]
 Use HELP for help.
